@@ -106,3 +106,11 @@ button {
     padding: 1em 1.5em;
     cursor: pointer;
 }
+/* Styles for the "stop" button */
+#stop {
+    font-size: 1.1em;
+    display: block;
+    margin: 1.1em auto 0 auto;
+    background-color: #000000;
+    color: #ffffff;
+}
