@@ -39,3 +39,11 @@ body {
 .stats-container span {
     font-weight: 600;
 }
+
+/* Container for each card */
+.card-container {
+    position: relative;
+    width: 6.25em;
+    height: 6.25em;
+    cursor: pointer;
+}
