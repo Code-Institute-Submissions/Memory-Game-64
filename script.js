@@ -161,3 +161,13 @@ startButton.addEventListener("click", () => {
     initializer();
 });
 
+//Stop game
+stopButton.addEventListener(
+    "click",
+    (stopGame = () => {
+        controls.classList.remove("hide");
+        stopButton.classList.add("hide");
+        startButton.classList.remove("hide");
+        clearInterval(interval);
+    })
+);
