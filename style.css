@@ -9,6 +9,8 @@
 /* Body styles */
 body {
     background-color: #31f47f;
+
+   
 }
 
 /* Wrapper styles for the main content */
@@ -138,4 +140,19 @@ button {
 #result h4 {
     font-size: 1.8em;
     margin: 0.6em 0 1em 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+    .wrapper {
+        width: 100%;
+        max-width: none;
+        padding: 1.5em;
+    }
+
+    .game-container {
+        max-width: none;
+        
+    }
+
 }
