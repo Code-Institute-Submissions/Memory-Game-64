@@ -125,3 +125,17 @@ button {
 .hide {
     display: none;
 }
+
+/* Styles for the result section */
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    font-size: 2.5em;
+}
+
+#result h4 {
+    font-size: 1.8em;
+    margin: 0.6em 0 1em 0;
+}
