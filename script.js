@@ -161,22 +161,3 @@ startButton.addEventListener("click", () => {
     initializer();
 });
 
-//Stop game
-stopButton.addEventListener(
-    "click",
-    (stopGame = () => {
-        controls.classList.remove("hide");
-        stopButton.classList.add("hide");
-        startButton.classList.remove("hide");
-        clearInterval(interval);
-    })
-);
-
-//Initialize values and func calls
-const initializer = () => {
-    result.innerText = "";
-    winCount = 0;
-    let cardValues = generateRandom();
-    console.log(cardValues);
-    matrixGenerator(cardValues);
-};
