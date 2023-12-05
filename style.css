@@ -120,3 +120,8 @@ button {
     font-size: 1.3em;
     box-shadow: 0 0.6em 2em rgba(86, 66, 0, 0.2);
 }
+
+/* Utility class to hide elements */
+.hide {
+    display: none;
+}
