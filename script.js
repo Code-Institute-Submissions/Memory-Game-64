@@ -64,3 +64,4 @@ const generateRandom = (size = 4) => {
     }
     return cardValues;
 };
+
