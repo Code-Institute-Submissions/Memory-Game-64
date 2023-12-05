@@ -171,3 +171,11 @@ stopButton.addEventListener(
         clearInterval(interval);
     })
 );
+//Initialize values and func calls
+const initializer = () => {
+    result.innerText = "";
+    winCount = 0;
+    let cardValues = generateRandom();
+    console.log(cardValues);
+    matrixGenerator(cardValues);
+};
