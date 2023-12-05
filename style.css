@@ -73,3 +73,25 @@ body {
     background-color: #ffffff;
     transform: rotateY(180deg);
 }
+
+/* Styles for flipped cards */
+.card-container.flipped .card-before {
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-after {
+    transform: rotateY(0deg);
+}
+
+/* Container for game controls */
+.controls-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #31f47f;
+    top: 0;
+}
