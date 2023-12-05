@@ -5,11 +5,13 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 /* Body styles */
 body {
-    background-color: #31f47f;
+    background-color: #f4c531;
+}
 
-}/* Wrapper styles for the main content */
+/* Wrapper styles for the main content */
 .wrapper {
     box-sizing: content-box;
     width: 26.87em;
@@ -30,6 +32,7 @@ body {
     display: grid;
     gap: 0.6em;
 }
+
 /* Container for game statistics */
 .stats-container {
     text-align: right;
@@ -64,7 +67,7 @@ body {
 }
 
 .card-before {
-    background-color: #31f47f;
+    background-color: #f4c531;
     font-size: 2.8em;
     font-weight: 600;
 }
@@ -92,6 +95,14 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #31f47f;
+    background-color: #f4c531;
     top: 0;
+}
+
+/* General button styles */
+button {
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+    cursor: pointer;
 }
