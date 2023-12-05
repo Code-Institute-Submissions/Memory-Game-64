@@ -8,9 +8,7 @@
 
 /* Body styles */
 body {
-    background-color: #31f47f;
-
-   
+    background-color: #31f4e7;
 }
 
 /* Wrapper styles for the main content */
@@ -69,7 +67,7 @@ body {
 }
 
 .card-before {
-    background-color: #31f47f;
+    background-color: #31f4e7;
     font-size: 2.8em;
     font-weight: 600;
 }
@@ -97,7 +95,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #31f47f;
+    background-color: #31f4e7;
     top: 0;
 }
 
@@ -108,6 +106,7 @@ button {
     padding: 1em 1.5em;
     cursor: pointer;
 }
+
 /* Styles for the "stop" button */
 #stop {
     font-size: 1.1em;
@@ -140,19 +139,4 @@ button {
 #result h4 {
     font-size: 1.8em;
     margin: 0.6em 0 1em 0;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 700px) {
-    .wrapper {
-        width: 100%;
-        max-width: none;
-        padding: 1.5em;
-    }
-
-    .game-container {
-        max-width: none;
-        
-    }
-
 }
