@@ -8,4 +8,17 @@
 /* Body styles */
 body {
     background-color: #31f47f;
+    
+}/* Wrapper styles for the main content */
+.wrapper {
+    box-sizing: content-box;
+    width: 26.87em;
+    padding: 2.5em 3em;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 0.6em;
+    box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
 }
