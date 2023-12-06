@@ -9,7 +9,6 @@
 /* Body styles */
 body {
     background-color: #31f4e7;
-
 }
 
 .heading,
@@ -104,6 +103,14 @@ body {
     transform: rotateY(0deg);
 }
 
+.card-container.matched .card-before {
+    transform: rotateY(180deg);
+}
+
+.card-container.matched .card-after {
+    transform: rotateY(0deg);
+}
+
 /* Container for game controls */
 .controls-container {
     position: absolute;
@@ -163,7 +170,7 @@ button {
     grid-template-columns: repeat(4, auto);
 }
 
-@media(max-width: 556px) {
+@media (max-width: 556px) {
     .game-container {
         /*   grid-template-columns: repeat(3, auto);*/
         justify-content: center;
@@ -194,7 +201,7 @@ button {
 
 /* Moving the button Down */
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
     .controls-container {
         bottom: 50px;
         top: unset;

@@ -78,11 +78,11 @@ const matrixGenerator = (cardValues, size = 4) => {
     cardValues.sort(() => Math.random() - 0.5);
     for (let i = 0; i < size * size; i++) {
         /*
-            Create Cards
-            before => front side (contains question mark)
-            after => back side (contains actual image);
-            data-card-values is a custom attribute which stores the names of the cards to match later
-          */
+                Create Cards
+                before => front side (contains question mark)
+                after => back side (contains actual image);
+                data-card-values is a custom attribute which stores the names of the cards to match later
+              */
         gameContainer.innerHTML += `
      <div class="card-container" data-card-value="${cardValues[i].name}">
         <div class="card-before">?</div>
@@ -98,39 +98,31 @@ const matrixGenerator = (cardValues, size = 4) => {
     cards = document.querySelectorAll(".card-container");
     cards.forEach((card) => {
         card.addEventListener("click", () => {
-            //If selected card is not matched yet then only run (i.e already matched card when clicked would be ignored)
             if (!card.classList.contains("matched")) {
-                //flip the cliked card
                 card.classList.add("flipped");
-                //if it is the firstcard (!firstCard since firstCard is initially false)
+
                 if (!firstCard) {
-                    //so current card will become firstCard
                     firstCard = card;
-                    //current cards value becomes firstCardValue
                     firstCardValue = card.getAttribute("data-card-value");
                 } else {
-                    //increment moves since user selected second card
                     movesCounter();
-                    //secondCard and value
                     secondCard = card;
                     let secondCardValue = card.getAttribute("data-card-value");
-                    if (firstCardValue == secondCardValue) {
-                        //if both cards match add matched class so these cards would beignored next time
+
+                    if (firstCardValue === secondCardValue) {
                         firstCard.classList.add("matched");
                         secondCard.classList.add("matched");
-                        //set firstCard to false since next card would be first now
+                        firstCard.classList.remove("flipped"); // Remove flipped class for matched cards
+                        secondCard.classList.remove("flipped"); // Remove flipped class for matched cards
                         firstCard = false;
-                        //winCount increment as user found a correct match
                         winCount += 1;
-                        //check if winCount ==half of cardValues
-                        if (winCount == Math.floor(cardValues.length / 2)) {
+
+                        if (winCount === Math.floor(cardValues.length / 2)) {
                             result.innerHTML = `<h2>You Won</h2>
-            <h4>Moves: ${movesCount}</h4>`;
+                <h4>Moves: ${movesCount}</h4>`;
                             stopGame();
                         }
                     } else {
-                        //if the cards dont match
-                        //flip the cards back to normal
                         let [tempFirst, tempSecond] = [firstCard, secondCard];
                         firstCard = false;
                         secondCard = false;
@@ -152,8 +144,8 @@ const description = document.querySelector(".description");
 
 //Start game
 startButton.addEventListener("click", () => {
-    heading.style.display = 'none';
-    description.style.display = 'none';
+    heading.style.display = "none";
+    description.style.display = "none";
     movesCount = 0;
     seconds = 0;
     minutes = 0;
@@ -172,8 +164,8 @@ startButton.addEventListener("click", () => {
 stopButton.addEventListener(
     "click",
     (stopGame = () => {
-        heading.style.display = 'block';
-        description.style.display = 'block';
+        heading.style.display = "block";
+        description.style.display = "block";
         controls.classList.remove("hide");
         stopButton.classList.add("hide");
         startButton.classList.remove("hide");
@@ -187,3 +179,44 @@ const initializer = () => {
     let cardValues = generateRandom();
     matrixGenerator(cardValues);
 };
+
+jQuery(document).ready(function () {
+    // Function to calculate date difference in days
+    function calculateDateDifference() {
+        var date1String = jQuery('input[name="date-1"]').val();
+        var date2String = jQuery('input[name="date-2"]').val();
+
+        // Parse the date strings to Date objects
+        var date1Parts = date1String.split("/");
+        var date2Parts = date2String.split("/");
+
+        // Create Date objects using the dd/mm/yyyy format
+        var date1 = new Date(date1Parts[2], date1Parts[1] - 1, date1Parts[0]);
+        var date2 = new Date(date2Parts[2], date2Parts[1] - 1, date2Parts[0]);
+
+        // Calculate the difference in milliseconds
+        var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+
+        // Calculate the difference in days
+        var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+        console.log(daysDiff);
+
+        if (!isNaN(daysDiff)) {
+            // Display the result in the specified text field
+            jQuery('input[name="text-2"]').val(daysDiff + " days");
+        }
+    }
+
+    setTimeout(() => {
+        console.log("OK");
+        jQuery('input[name="text-2"]').css({
+            "pointer-events": "none",
+            cursor: "not-allowed",
+        });
+        // Attach the function to the input event for both date fields
+        jQuery('input[name="date-1"], input[name="date-2"]').on(
+            "change",
+            calculateDateDifference
+        );
+    }, 2000);
+});
