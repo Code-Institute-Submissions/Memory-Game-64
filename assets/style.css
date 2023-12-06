@@ -9,6 +9,24 @@
 /* Body styles */
 body {
     background-color: #31f4e7;
+
+}
+
+.heading,
+.description {
+    text-align: center;
+    position: relative;
+    z-index: 9999;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.description {
+    width: 70%;
+}
+
+.heading {
+    margin: 0.5em auto;
 }
 
 /* Wrapper styles for the main content */
@@ -167,5 +185,19 @@ button {
         top: 0;
         right: 0;
         margin: 0px auto;
+    }
+
+    .description {
+        width: 90%;
+    }
+}
+
+/* Moving the button Down */
+
+@media (max-width:450px) {
+    .controls-container {
+        bottom: 50px;
+        top: unset;
+        justify-content: flex-end;
     }
 }

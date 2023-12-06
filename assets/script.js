@@ -87,7 +87,7 @@ const matrixGenerator = (cardValues, size = 4) => {
      <div class="card-container" data-card-value="${cardValues[i].name}">
         <div class="card-before">?</div>
         <div class="card-after">
-        <img src="${cardValues[i].image}" class="image"/></div>
+        <img src="assets/images/${cardValues[i].image}" class="image"/></div>
      </div>
      `;
     }
@@ -145,8 +145,15 @@ const matrixGenerator = (cardValues, size = 4) => {
     });
 };
 
+// Heading and Description
+
+const heading = document.querySelector(".heading");
+const description = document.querySelector(".description");
+
 //Start game
 startButton.addEventListener("click", () => {
+    heading.style.display = 'none';
+    description.style.display = 'none';
     movesCount = 0;
     seconds = 0;
     minutes = 0;
@@ -165,6 +172,8 @@ startButton.addEventListener("click", () => {
 stopButton.addEventListener(
     "click",
     (stopGame = () => {
+        heading.style.display = 'block';
+        description.style.display = 'block';
         controls.classList.remove("hide");
         stopButton.classList.add("hide");
         startButton.classList.remove("hide");
@@ -176,6 +185,5 @@ const initializer = () => {
     result.innerText = "";
     winCount = 0;
     let cardValues = generateRandom();
-    console.log(cardValues);
     matrixGenerator(cardValues);
 };
