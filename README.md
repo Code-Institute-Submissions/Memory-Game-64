@@ -35,3 +35,7 @@ This is a fully responsive website that was designed with a mobile-first approac
 ## Timer Display
 - The game is timed, Time and moves will be prominently displayed when playing and at the end of matching all pairs of Memory game challenge.
 <img src="assets/images/pp12.png">
+
+## Score Display
+- Memory Game will Show the user's "YOU WON" and total moves made after matching all pairs of the game, updating in real-time as they make successful matches.
+<img src="assets/images/pp4.png">
