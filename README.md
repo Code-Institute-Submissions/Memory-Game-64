@@ -13,3 +13,4 @@ This is a fully responsive website that was designed with a mobile-first approac
 ## User-Friendly Interface.
 - Intuitive design for easy navigation.
 - Clear instructions on how to play the game.
+<img src="assets/images/newpp2.png">
