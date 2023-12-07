@@ -109,7 +109,7 @@ I have used several technologies that have enabled this design to work:
   - Used to accurately format my HTML code.
 - [AmIResponsive](http://ami.responsivedesign.is/)
   - Used to generate repsonsive image used in README file.
-- [Flaticon] <https://www.flaticon.com/search?word=anaconda&k=1701933749453&sign-up=email>
+- [Flaticon](https://www.flaticon.com/search?word=anaconda&k=1701933749453&sign-up=email)
   - Used for my images used in the came.
 
 ---
