@@ -10,7 +10,7 @@ Moreover, Memory Game incorporates responsive design elements, making it accessi
 <img src="assets/images/read203.png">
 
 # Features
-This is a fully responsive website that was designed with a mobile-first approach as this is the most likely way it will be viewed, the page is divided in different sections as listed below.Memory Game stands as a testament to the fusion of entertainment and cognitive enhancement. With its thoughtful design, engaging gameplay, and user-friendly interface, this website strives to create an enjoyable and enriching experience for individuals seeking both amusement and mental stimulation.
+This is a fully responsive website that was designed with a mobile-first approach as this is the most likely way it will be viewed, the game is divided in different sections as listed below.Memory Game stands as a testament to the fusion of entertainment and cognitive enhancement. With its thoughtful design, engaging gameplay, and user-friendly interface, this website strives to create an enjoyable and enriching experience for individuals seeking both amusement and mental stimulation.
 
 ## User-Friendly Interface.
 - Intuitive design for easy navigation.
@@ -21,3 +21,7 @@ This is a fully responsive website that was designed with a mobile-first approac
 
 - The "Stats" button this will lead to a dedicated section where users can view detailed functionaliy about the game.
 <img src="assets/images/pp6.png">
+
+## The Game Area
+The central element of the website is the game area, featuring a grid of face-down cards that users can interact with. Clicking on each card once to reveal their content while playing.
+<img src="assets/images/pp7.png">
