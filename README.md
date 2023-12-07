@@ -6,3 +6,10 @@ Upon entering the site, users are greeted with an intuitive interface that promo
 
 The core feature of the website is the memory game itself, a thoughtfully crafted activity that prompts users to match pairs of images within a specified time frame. As players progress through different levels, the complexity of the game increases, providing a progressive and rewarding journey. The game not only entertains but also serves as a valuable tool for honing memory retention and concentration skills.
 <img src="assets/images/read203.png">
+
+# Features
+This is a fully responsive website that was designed with a mobile-first approach as this is the most likely way it will be viewed, the page is divided in different sections as listed below.
+
+## User-Friendly Interface.
+- Intuitive design for easy navigation.
+- Clear instructions on how to play the game.
