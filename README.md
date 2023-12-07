@@ -23,10 +23,15 @@ This is a fully responsive website that was designed with a mobile-first approac
 - Users can also click on start button to start a new game as instructed in the decsription.
 <img src="assets/images/pp6.png">
 
+## Stop Button
+
+- The stop button is applied to the Meomory Game for the user to stop the game if the user gets intterupted while playing to start afresh. 
+<img src="assets/images/pp5.png">
+
 ## The Game Area
 - The central element of the website is the game area, featuring a grid of face-down cards that users can interact with. Clicking on each card once to reveal their content while playing.
 <img src="assets/images/pp7.png">
 
 ## Timer Display
-The game is timed, this will be prominently displayed when playing and at the end of matching all pairs Memory game challenge.
+- The game is timed, Time and moves will be prominently displayed when playing and at the end of matching all pairs of Memory game challenge.
 <img src="assets/images/pp12.png">
