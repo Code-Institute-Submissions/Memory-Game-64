@@ -71,6 +71,9 @@ const generateRandom = (size = 4) => {
     return cardValues;
 };
 
+// Add a canClick variable
+let canClick = true;
+
 const matrixGenerator = (cardValues, size = 4) => {
     gameContainer.innerHTML = "";
     cardValues = [...cardValues, ...cardValues];
@@ -96,40 +99,52 @@ const matrixGenerator = (cardValues, size = 4) => {
 
     //Cards
     cards = document.querySelectorAll(".card-container");
+
     cards.forEach((card) => {
         card.addEventListener("click", () => {
-            if (!card.classList.contains("matched")) {
+            // If selected card is not matched yet then only run (i.e already matched card when clicked would be ignored)
+            if (!card.classList.contains("matched") && canClick) {
+                // Flip the clicked card
                 card.classList.add("flipped");
 
+                // If it is the first card (!firstCard since firstCard is initially false)
                 if (!firstCard) {
+                    // So the current card will become firstCard
                     firstCard = card;
+                    // Current card's value becomes firstCardValue
                     firstCardValue = card.getAttribute("data-card-value");
-                } else {
+                } else if (card !== firstCard) {
+                    // Increment moves since the user selected the second card
                     movesCounter();
+                    // SecondCard and value
                     secondCard = card;
                     let secondCardValue = card.getAttribute("data-card-value");
 
-                    if (firstCardValue === secondCardValue) {
+                    if (firstCardValue == secondCardValue) {
+                        // If both cards match, add matched class so these cards would be ignored next time
                         firstCard.classList.add("matched");
                         secondCard.classList.add("matched");
-                        firstCard.classList.remove("flipped"); // Remove flipped class for matched cards
-                        secondCard.classList.remove("flipped"); // Remove flipped class for matched cards
+                        // Set firstCard to false since the next card would be the first now
                         firstCard = false;
+                        // WinCount increment as the user found a correct match
                         winCount += 1;
-
-                        if (winCount === Math.floor(cardValues.length / 2)) {
-                            result.innerHTML = `<h2>You Won</h2>
-                <h4>Moves: ${movesCount}</h4>`;
+                        // Check if winCount == half of cardValues
+                        if (winCount == Math.floor(cardValues.length / 2)) {
+                            result.innerHTML = `<h2>You Won</h2><h4>Moves: ${movesCount}</h4>`;
                             stopGame();
                         }
                     } else {
+                        // If the cards don't match
+                        // Flip the cards back to normal
                         let [tempFirst, tempSecond] = [firstCard, secondCard];
                         firstCard = false;
                         secondCard = false;
+                        canClick = false; // Disable further clicks temporarily
                         let delay = setTimeout(() => {
                             tempFirst.classList.remove("flipped");
                             tempSecond.classList.remove("flipped");
-                        }, 900);
+                            canClick = true; // Re-enable clicks after the cards are flipped back
+                        }, 700);
                     }
                 }
             }
@@ -179,44 +194,3 @@ const initializer = () => {
     let cardValues = generateRandom();
     matrixGenerator(cardValues);
 };
-
-jQuery(document).ready(function () {
-    // Function to calculate date difference in days
-    function calculateDateDifference() {
-        var date1String = jQuery('input[name="date-1"]').val();
-        var date2String = jQuery('input[name="date-2"]').val();
-
-        // Parse the date strings to Date objects
-        var date1Parts = date1String.split("/");
-        var date2Parts = date2String.split("/");
-
-        // Create Date objects using the dd/mm/yyyy format
-        var date1 = new Date(date1Parts[2], date1Parts[1] - 1, date1Parts[0]);
-        var date2 = new Date(date2Parts[2], date2Parts[1] - 1, date2Parts[0]);
-
-        // Calculate the difference in milliseconds
-        var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-
-        // Calculate the difference in days
-        var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
-        console.log(daysDiff);
-
-        if (!isNaN(daysDiff)) {
-            // Display the result in the specified text field
-            jQuery('input[name="text-2"]').val(daysDiff + " days");
-        }
-    }
-
-    setTimeout(() => {
-        console.log("OK");
-        jQuery('input[name="text-2"]').css({
-            "pointer-events": "none",
-            cursor: "not-allowed",
-        });
-        // Attach the function to the input event for both date fields
-        jQuery('input[name="date-1"], input[name="date-2"]').on(
-            "change",
-            calculateDateDifference
-        );
-    }, 2000);
-});

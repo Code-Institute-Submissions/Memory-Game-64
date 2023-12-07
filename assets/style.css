@@ -199,6 +199,10 @@ button {
     }
 }
 
+#start {
+    z-index: 999;
+}
+
 /* Moving the button Down */
 
 @media (max-width: 450px) {
