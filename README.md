@@ -27,8 +27,8 @@ This is a fully responsive website that was designed with a mobile-first approac
 
 ## Stop Button
 
-- The stop button is applied to the Meomory Game for the user to stop the game if the user gets intterupted while playing to start afresh.
-  <img src="assets/images/pp5.png">
+- The stop button is applied to the Meomory Game for the user's to stop the game when intterupted while playing, to start afresh.
+<img src="assets/images/pp5.png">
 
 ## The Game Area
 
