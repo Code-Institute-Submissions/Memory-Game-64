@@ -44,3 +44,16 @@ This is a fully responsive website that was designed with a mobile-first approac
 
 - Memory Game will Show the user's "YOU WON" and total moves made after matching all pairs of the game, updating in real-time as they make successful matches.
   <img src="assets/images/pp4.png">
+
+## Testing
+
+## Validator Testing
+- HTML
+. No errors were returned when passing through the official [W3C Markup Validation Service](https://validator.w3.org/)
+<img src="assets/images/ccvw.png">
+
+- CSS
+. No errors were found when passing through the officia [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+<img src="assets/images/ccv.png">
+
+- [JavaScript](https://www.javascript.com/)
