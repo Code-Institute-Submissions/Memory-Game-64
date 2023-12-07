@@ -20,8 +20,13 @@ This is a fully responsive website that was designed with a mobile-first approac
 ## Stats Button
 
 - The "Stats" button this will lead to a dedicated section where users can view detailed functionaliy about the game.
+- Users can also click on start button to start a new game as instructed in the decsription.
 <img src="assets/images/pp6.png">
 
 ## The Game Area
-The central element of the website is the game area, featuring a grid of face-down cards that users can interact with. Clicking on each card once to reveal their content while playing.
+- The central element of the website is the game area, featuring a grid of face-down cards that users can interact with. Clicking on each card once to reveal their content while playing.
 <img src="assets/images/pp7.png">
+
+## Timer Display
+The game is timed, this will be prominently displayed when playing and at the end of matching all pairs Memory game challenge.
+<img src="assets/images/pp12.png">
