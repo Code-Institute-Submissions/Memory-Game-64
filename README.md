@@ -48,12 +48,13 @@ This is a fully responsive website that was designed with a mobile-first approac
 ## Testing
 
 ## Validator Testing
-- HTML
-. No errors were returned when passing through the official [W3C Markup Validation Service](https://validator.w3.org/)
+1. HTML
+- No errors were returned when passing through the official [W3C Markup Validation Service](https://validator.w3.org/)
 <img src="assets/images/ccvw.png">
 
-- CSS
-. No errors were found when passing through the officia [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+2. CSS
+-  No errors were found when passing through the officia [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
 <img src="assets/images/ccv.png">
 
+3. Javascript
 - [JavaScript](https://www.javascript.com/)
