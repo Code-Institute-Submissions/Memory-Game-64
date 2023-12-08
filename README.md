@@ -113,3 +113,17 @@ I have used several technologies that have enabled this design to work:
   - Used for my images used in the came.
 
 ---
+
+## Deployment
+
+I deployed this website by using GitPages and following the below steps:
+
+*GitHub pages deployment*
+
+1. Log in to GitHub
+2. In your Repository section, select the project repository that you want to deploy
+3. In the menu located at the top of this section, click 'Settings'
+4. Select 'Pages' on the left-hand menu - this is around halfway down
+5. In the source section, select branch 'Master' and save
+6. The page is then given a site URL which you will see above the source section, it will look like the following:
+<img src="assets/images/Deployed.png">
