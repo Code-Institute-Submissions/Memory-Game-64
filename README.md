@@ -47,6 +47,10 @@ This is a fully responsive website that was designed with a mobile-first approac
 
 ## Testing
 
+## Lighthouse
+- Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a high-performance score initially, as you can see below.
+ <img src="assets/images/light.png">
+
 ### Validator Testing
 
 - HTML
