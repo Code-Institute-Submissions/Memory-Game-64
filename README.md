@@ -47,6 +47,10 @@ This is a fully responsive website that was designed with a mobile-first approac
 
 ## Testing
 
+### **User Stories**
+As a first-time visitor, I want to easily find useful information & tips for Memory Game website.
+As soon as you enter the display page you can easily see within the navbar the 'Memory Game' section; upon clicking on the start game button,this you are taken to a section filled with cards with question marks that you can click on to flip the cards.
+ <img src="assets/images/pp8.png">
 ## Lighthouse
 - Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a high-performance score initially, as you can see below.
  <img src="assets/images/light.png">
