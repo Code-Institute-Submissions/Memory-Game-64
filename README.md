@@ -171,3 +171,8 @@ The below websites were used for the content:
   - Used for my images used in the came.
 - [Favicon.io](https://favicon.io/)
   - Used to create favicon's for my website
+
+## Acknowledgments
+Thank you for visiting the Memory Game website. Explore the game and embark on a sharpening your memory with us!
+
+I would like to thank  Jonathan_Zakrisson_Alumnus my fellow student  for his support and guidance throughout the project and my other fellow student on slack for their support & feedback.
