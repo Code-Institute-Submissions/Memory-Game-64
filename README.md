@@ -143,6 +143,17 @@ I deployed this website by using GitPages and following the below steps:
 6. The page is then given a site URL which you will see above the source section, it will look like the following:
 <img src="assets/images/Deployed.png">
 
+*Cloning the GitHub Repository*
+
+Cloning your repository will allow you to download a local version of the repository to be worked on. Cloning can also be a great way to backup your work.
+
+1. Find the relevant GitHub repository
+2. Press the arrow on the Code button
+3. Copy the link that is shown in the drop-down
+4. Now open Gitpod & select the directory location where you would like the clone created
+5. In the terminal type 'git clone' & then paste the link you copied in GitHub
+6. Press enter and your local clone will be created.
+
 ------
 ## Credits
 
