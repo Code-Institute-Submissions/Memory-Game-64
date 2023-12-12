@@ -143,7 +143,7 @@ I deployed this website by using GitPages and following the below steps:
 6. The page is then given a site URL which you will see above the source section, it will look like the following:
 <img src="assets/images/Deployed.png">
 
-*Cloning the GitHub Repository*
+*Cloning the GitHub Repository
 
 Cloning your repository will allow you to download a local version of the repository to be worked on. Cloning can also be a great way to backup your work.
 
