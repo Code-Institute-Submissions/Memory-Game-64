@@ -8,6 +8,7 @@ The core feature of the website is the memory game itself, a thoughtfully crafte
 
 Moreover, Memory Game incorporates responsive design elements, making it accessible across various devices, including desktops, tablets, and smartphones. This adaptability ensures that users can enjoy the game seamlessly, regardless of their preferred device.
 <img src="assets/images/read203.png">
+-----
 
 # Features
 
@@ -56,6 +57,7 @@ As soon as you enter the display page you can easily see instructions of the 'Me
  <img src="assets/images/light.png">
 
 ### Validator Testing
+- I validated my both HTML and CSS code multiple times while building the website, I did this so that there were not a huge amount of errors/warnings at the final stages of development for me to deal with. This allowed me to incrementally improve my code and upon completion, there were 0 errors found.
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
@@ -67,7 +69,7 @@ As soon as you enter the display page you can easily see instructions of the 'Me
 - JavaScript
   - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
 
------
+------
 
 ## Technologies Used
 
@@ -120,7 +122,7 @@ I have used several technologies that have enabled this design to work:
 - [Flaticon](https://www.flaticon.com/search?word=anaconda&k=1701933749453&sign-up=email)
   - Used for my images used in the came.
 
----
+-----
 
 ## Deployment
 
