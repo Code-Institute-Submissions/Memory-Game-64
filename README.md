@@ -9,7 +9,7 @@ The core feature of the website is the memory game itself, a thoughtfully crafte
 Moreover, Memory Game incorporates responsive design elements, making it accessible across various devices, including desktops, tablets, and smartphones. This adaptability ensures that users can enjoy the game seamlessly, regardless of their preferred device.
 
 <img src="assets/images/read203.png">
------
+
 
 # Features
 
@@ -75,7 +75,6 @@ As soon as you enter the display page you can easily see instructions of the 'Me
   - Largest function has 21 statements in it, while the median is 6.
   - The most complex function has a cyclomatic complexity value of 7 while the median is 1.
 
-------
 
 ## Technologies Used
 
@@ -128,7 +127,6 @@ I have used several technologies that have enabled this design to work:
 - [Flaticon](https://www.flaticon.com/search?word=anaconda&k=1701933749453&sign-up=email)
   - Used for my images used in the came.
 
------
 
 ## Deployment
 
@@ -155,7 +153,7 @@ Cloning your repository will allow you to download a local version of the reposi
 5. In the terminal type 'git clone' & then paste the link you copied in GitHub
 6. Press enter and your local clone will be created.
 
-------
+
 ## Credits
 
 I have used a number of resources to produce this website, where code has been used found from another source this is credited as a comment within the HTML, CSS and JS files.
