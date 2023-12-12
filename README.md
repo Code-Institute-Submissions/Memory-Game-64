@@ -176,7 +176,9 @@ The following websites/articles were used for research and guidance:
   
 - [Visually hidden elements](https://www.w3.org/WAI/tutorials/forms/labels/)
 
+## media
 The below websites were used for the content:
+The images used for the gallery page were taken from this other open source site.
 
 - [Flaticon](https://www.flaticon.com/search?word=anaconda&k=1701933749453&sign-up=email)
   - Used for my images used in the website game.
