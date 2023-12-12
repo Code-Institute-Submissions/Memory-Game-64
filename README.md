@@ -179,7 +179,7 @@ The following websites/articles were used for research and guidance:
 The below websites were used for the content:
 
 - [Flaticon](https://www.flaticon.com/search?word=anaconda&k=1701933749453&sign-up=email)
-  - Used for my images used in the came.
+  - Used for my images used in the website game.
 - [Favicon.io](https://favicon.io/)
   - Used to create favicon's for my website
 
