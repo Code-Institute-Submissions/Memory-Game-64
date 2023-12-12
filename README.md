@@ -68,6 +68,11 @@ As soon as you enter the display page you can easily see instructions of the 'Me
 
 - JavaScript
   - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+  - The following metrics were returned:
+  - There are 11 functions in this file.
+  - Function with the largest signature takes 2 arguments, while the median is 0.
+  - Largest function has 21 statements in it, while the median is 6.
+  - The most complex function has a cyclomatic complexity value of 7 while the median is 1.
 
 ------
 
