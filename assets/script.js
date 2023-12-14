@@ -132,7 +132,6 @@ const matrixGenerator = (cardValues, size = 4) => {
                         const matched = document.querySelectorAll(".matched").length;
 
                         if (matched > 0 && matched % 2 == 0) {
-                            console.log(matched);
                             cardMatchCount++;
                             cardCount.textContent = cardMatchCount;
                         }
