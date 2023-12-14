@@ -170,6 +170,14 @@ button {
   grid-template-columns: repeat(4, auto);
 }
 
+#card-match-count span {
+    font-weight: 600;
+}
+
+#total-count {
+    font-weight: 400 !important;
+}
+
 @media (max-width: 556px) {
   .game-container {
     /*   grid-template-columns: repeat(3, auto);*/
