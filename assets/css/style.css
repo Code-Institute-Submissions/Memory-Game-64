@@ -193,22 +193,18 @@ button {
         font-size: 1.8em;
     }
 
-     .wrapper {
-            padding: 40px 20px;
-            transform: translate(0%, -50%);
-            left: 0;
-            top: 50%;
-            right: 0;
-            margin: 0px auto;
-     }
+    .wrapper {
+        padding: 40px 20px;
+        transform: translate(0%, -50%);
+        left: 0;
+        top: 50%;
+        right: 0;
+        margin: 0px auto;
+    }
 
     .description {
         width: 90%;
     }
-}
-
-#start {
-    z-index: 999;
 }
 
 /* Moving the button Down */
