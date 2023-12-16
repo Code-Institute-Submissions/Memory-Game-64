@@ -170,6 +170,14 @@ button {
     grid-template-columns: repeat(4, auto);
 }
 
+#card-match-count span {
+    font-weight: 600;
+}
+
+#total-count {
+    font-weight: 400 !important;
+}
+
 @media (max-width: 556px) {
     .game-container {
         /*   grid-template-columns: repeat(3, auto);*/
@@ -185,14 +193,14 @@ button {
         font-size: 1.8em;
     }
 
-    .wrapper {
-        padding: 40px 20px;
-        transform: translate(0%, 35%);
-        left: 0;
-        top: 0;
-        right: 0;
-        margin: 0px auto;
-    }
+     .wrapper {
+            padding: 40px 20px;
+            transform: translate(0%, -50%);
+            left: 0;
+            top: 50%;
+            right: 0;
+            margin: 0px auto;
+     }
 
     .description {
         width: 90%;
@@ -208,7 +216,10 @@ button {
 @media (max-width: 450px) {
     .controls-container {
         bottom: 50px;
-        top: unset;
         justify-content: flex-end;
+    }
+
+    .controls-container #start {
+        margin-bottom: 1em;
     }
 }
