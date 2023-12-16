@@ -18,15 +18,14 @@ Moreover, Memory Game incorporates responsive design elements, making it accessi
 This is a fully responsive website that was designed with a mobile-first approach as this is the most likely way it will be viewed, the game is divided in different sections as listed below.Memory Game stands as a testament to the fusion of entertainment and cognitive enhancement. With its thoughtful design, engaging gameplay, and user-friendly interface, this website strives to create an enjoyable and enriching experience for individuals seeking both amusement and mental stimulation.
 
 ## User-Friendly Interface.
-
-- Intuitive design for easy navigation.
-- Clear instructions on how to play the game.
+- As a first-time user,l want to find the interface thoughtfully designed for easy navigation.
+- As a first time user i want see Clear instructions on how to play the game.
   <img src="assets/images/newpp2.png">
 
 ## Stats Button
 
-- The "Stats" button this will lead to a dedicated section where users can view detailed functionaliy about the game.
-- Users can also click on start button to start a new game as instructed in the decsription.
+- As a first-time user, I want to explore the "Start" button, which serves as a gateway to a dedicated section providing detailed functionality about the game.
+- As a first time User i also want to click on start button to start a new game as instructed in the decsription.
   <img src="assets/images/pp6.png">
 
 ## Stop Button
@@ -36,7 +35,7 @@ This is a fully responsive website that was designed with a mobile-first approac
 
 ## The Game Area
 
-- The central element of the website is the game area, featuring a grid of face-down cards that users can interact with. Clicking on each card once to reveal their content while playing.
+- As a first-time user, you'll likely be drawn to the central element of the website—the game area. Here, you can engage with a grid of face-down cards, each holding a hidden content. To reveal the information on each card, simply click on them once while playing.
   <img src="assets/images/new1.png">
 
 ## Timer Display
@@ -46,13 +45,13 @@ This is a fully responsive website that was designed with a mobile-first approac
 
 ## Score Display
 
-- Memory Game will Show the user's "YOU WON" and total moves made after matching all pairs of the game, updating in real-time as they make successful matches.
+- As a first-time user, you'll want to know that the Memory Game is designed to provide real-time feedback on your progress. Upon successfully matching all pairs in the game, the system will display a celebratory "YOU WON" message. Additionally, the total number of moves you made throughout the game will be updated and presented in real-time. This feature not only acknowledges your achievement but also keeps you informed about your performance, creating an engaging and rewarding experience. It's a way to celebrate your success while offering a transparent view of your gameplay metrics.
   <img src="assets/images/pp4.png">
 
 ## Testing
 
 ### **User Stories**
-As a first-time player, I want to easily find useful information & tips for the Memory Game website.
+As a first time player, I want to easily find useful information & tips for the Memory Game website.
 As soon as you enter the display page you can easily see instructions of the 'Memory Game' how its played, upon clicking on the start game button,this will taken you to a section filled with cards with question marks that you can click on to flip the cards.
  <img src="assets/images/pp8.png">
  
