@@ -41,7 +41,7 @@ This is a fully responsive website that was designed with a mobile-first approac
 
 ## Timer Display
 
-- The game is timed, Time and moves will be prominently displayed when playing and at the end of matching all pairs of Memory game challenge.
+- As a participant engaging in the Memory game challenge for the first time, I desire a clear and conspicuous presentation of essential information during gameplay. Specifically, I would like real-time updates on the clock, the number of card matches achieved, and the total moves made. These crucial elements should be prominently displayed throughout the gaming experience, ensuring that I can effortlessly track my progress.
   <img src="assets/images/rr.png">
 
 ## Score Display
@@ -147,7 +147,7 @@ I deployed this website by using GitPages and following the below steps:
 4. Select 'Pages' on the left-hand menu - this is around halfway down
 5. In the source section, select branch 'Main' and save
 6. The page is then given a site URL which you will see above the source section, it will look like the following:
-   <img src="assets/images/Deployed.png">
+   <img src="assets/images/deployed.png">
 
 \*Cloning the GitHub Repository
 
